@@ -1,39 +1,94 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html>
 
 <head>
-    <title>LA TV Shows | Home</title>
-    <meta name="description" content="A Catalog of Shows Set in Los Angeles">
+    <title>Michael's Snack Catalog</title>
+    <meta name="description" content="A Catalog of Snacks to browse">
     <link rel="stylesheet" href="style.css" />
-    <script type="text/javascript" src="scripts.js"></script>
+    <script type="text/javascript" src="scripts.js"></script>    
+    
 </head>
 
 <body>
     <header class="main-header">
-        <h1 class="title">LA TV Shows</h1>
+        <h1 class="title">Snack Catalog</h1>
     </header>
-    <div id="card-container">
-        
+
+    <div class = "actions">
+    <header class="sub-header"> <h1>Welcome to my Snack Catalog!</h1> 
+    <h3><button onclick = "showAll()">Click here to show the current databases</button></h3>
+    <p>Note - Data will also be shown in the console</p>
+    </header>
+
+    <h3>Add to the Snack Catalog!</h3>  
+    <fieldset>
+    <input onfocus="this.value=''" type="text" id="snackName" placeholder="Name" required>
+    <input onfocus="this.value=''" type="number" id="snackPrice" placeholder="Price" required>
+    <input onfocus="this.value=''" type="text" id="snackType" placeholder="Type (Sweet, Spicy, etc.)" required>
+    <button onclick = "addSnack()" type="submit">Add</button>
+    </fieldset>
+    
+    <h3>Delete from the Snack Catalog!</h3>
+    <fieldset>
+    <input onfocus="this.value=''" type="text" id="deleteSnackName" placeholder="Name" required>
+    <button onclick = "deleteSnack(document.getElementById('deleteSnackName').value)" type="submit">Delete</button>
+    <button onclick = "clearInventory()" type="submit">Clear All</button>
+    </fieldset>
+
+    <h3>What type of snacks would you reccomend from the Snack Catalog?</h3>
+    <fieldset>
+    <input onfocus="this.value=''" type="text" id="makeSnackSet" placeholder="Type (Sweet, Spicy, etc.)" required>
+    <button onclick = "makeReccomendation(document.getElementById('makeSnackSet').value)" type="submit">Submit</button>
+    <button onclick = "clearReccomendation()" type="submit">Clear All</button>
+    </fieldset>
+    
+    <div class = Databases>
+    <article class = "reccomendationData">
+    <h3>Current Reccomendations:</h3> 
+    <div id = "Reccomendations"></div>
+    </article>
+  
+    <article class = "inventoryData">
+    <h3>Current Inventory:</h3> 
+    <div id = "snackInventory"></div>
+    </article>
+
+    <article class = "reccomendationCost">
+    <h3>Total Reccomendation Database Value:</h3> 
+    <div id = "recTotal"></div>
+    </article>
+
+    <article class = "inventoryCost">
+    <h3>Total Inventory Database Value:</h3> 
+    <div id = "inTotal"></div>
+    </article>
+    
     </div>
+    </div>
+   
+ <!--
+    <div id="snack-container">
+    </div>
+
+   
     <div class="card" style="display: none;">
         <div class="card-content">
             <h2>TV Show Title</h2>
-            <img src="" alt="TV Show Poster">
-            <ul>
-                <li>Bullet Point 1</li>
-                <li>Bullet Point 2</li>
-                <li>Bullet Point 3</li>
-            </ul>
+            <img src="" alt="Snack Show Poster">
+            
         </div>
     </div>
     <div class="footer">
         <button onclick="quoteAlert();">
-            Get A Quote!
+            |Browse Spicy Snacks|------
         </button>
         <button onclick="removeLastCard();">
-            Remove A Card!
+            ------|Browse Sweet Snacks|------
         </button>
+        <button> ------|Browse Salty Snacks|</button>
     </div>
+
+-->
 </body>
 
 </html>

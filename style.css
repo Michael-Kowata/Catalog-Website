@@ -1,14 +1,65 @@
 html,
+
 body {
     margin: 0;
     padding: 0;
+    background-image: url(https://media.istockphoto.com/id/880710798/vector/seamless-vector-bakery-pastry-pattern.jpg?s=612x612&w=0&k=20&c=e5TN-lIQoRhqrdIoJhUs_VfhzcmDxEY869s6s1SRYF8=);
 }
 
 .main-header {
     background-color: rgba(0, 0, 0, .3);
     padding-bottom: 10px;
+    text-align: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
+.actions {
+    text-align: center;
+    background-color: goldenrod;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Databases
+{
+    text-align: left;
+}
+
+.reccomendationData div, h3 {
+    display: inline-block;
+  }
+
+.inventoryData div, h3 {
+    display: inline-block;
+}
+
+.reccomendationCost div, h3 {
+    display: inline-block;
+}
+
+.inventoryCost div, h3 {
+    display: inline-block;
+}
+
+button {
+    text-align: center;
+    background-color: #666;
+    border: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 40px;
+    border-radius: 10px;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+
+/*
 .title {
     text-align: center;
     margin: 0;
@@ -18,7 +69,7 @@ body {
     color: white;
 }
 
-#card-container {
+#snack-container {
     display: flex;
     justify-content: center;
     margin: 20px;
@@ -54,17 +105,5 @@ body {
     background-color: rgba(0, 0, 0, .3);
     padding: 10px;
 }
+*/
 
-button {
-    text-align: center;
-    background-color: #666;
-    border: none;
-    padding-left: 10px;
-    padding-right: 10px;
-    height: 40px;
-    border-radius: 10px;
-    color: white;
-    font-size: 22px;
-    cursor: pointer;
-    margin: 5px;
-}
